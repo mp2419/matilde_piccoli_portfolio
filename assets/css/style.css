@@ -383,7 +383,7 @@ input[type=radio] {
 }
 
 /* Selectpicker */
-select {
+.select {
     position: absolute !important;
     bottom: 0;
     left: 50%;
@@ -405,7 +405,7 @@ select {
 }
 
 .bootstrap-select.btn-group .dropdown-menu.inner {
-    position: static; *
+    position: static; 
     float: none;
     border: 0;
     padding: 0;
@@ -656,21 +656,22 @@ html, body {
 ================================================== */
 .site-header {
     position: absolute;
-    padding: 50px 0 0;
-    background-color: transparent;
+    padding: 50px 0 50px 0;
+    background-color: rgb(19, 19, 19);
     width: 100%;
     z-index: 3;
 }
 
 /* Site-logo */
 .site-title {
-    font-size: 30px;
+    font-size: 35px;
     line-height: 40px;
     color: #fff;
+    font-weight: 600;
 }
 
 .site-title:hover {
-    color: #26272d;   
+    color: #ffffff;   
 }
 
 .site-title span {
@@ -682,6 +683,7 @@ html, body {
 }
 
 /* Navigation */
+
 .navbar-collapse {
     text-align: center;
 }
@@ -731,6 +733,7 @@ html, body {
 .slicknav_nav > li a:hover {
     background-color: transparent;
     color: #38cb0b;
+    font-size: x-large;
 }
 
 .navbar-toggle {
@@ -793,8 +796,8 @@ html, body {
 /* HERO
 ================================================== */
 .hero { 
-    /* background: url(../img/hero.jpg) no-repeat center / cover;  */
-    background-color: #336424;
+    background: url(../img/circuit-board-1515557.jpg) no-repeat center / cover; 
+    /* background-color: #336424; */
     height: 100%;
     width: 100%;
     display: table;
@@ -803,7 +806,9 @@ html, body {
 
 .overlay:before {
   content: '';
-  background-color:  #678867ca;
+  background: url(../img/circuit-board-1515557.jpg) no-repeat center / cover; 
+
+  /* background-color:  #678867ca; */
   height: 100%;
   width: 100%;
   position: absolute;
@@ -813,6 +818,7 @@ html, body {
 }
 
 .hero-content {
+    background-color:  #678867ca;
     display: table-cell;
     vertical-align: middle;
     padding-top: 75px;
@@ -821,12 +827,13 @@ html, body {
 }
 
 .hero-text {
-    max-width: 890px;
-    width: 100%;
+    /* max-width: 1000px; */
+    width: 70%;
     margin: 0 auto;
     padding: 0 15px;
     text-align: center;
     color: #000;
+    background-color:  #678867ca;
 }
 
 .hero-text h3 {
@@ -835,6 +842,8 @@ html, body {
     margin: 20px;
     color: #000;
     border-top: #000;
+    background-color:  #678867fa;
+    padding: 80px;
     /* border-width: 20px;
     border-radius: 5px; */
 }
@@ -843,6 +852,7 @@ html, body {
     position: relative;
     margin: 0;
     color: #678867ca;
+    color: #000;
 }
 
 .hero-text h3 p {
@@ -853,7 +863,7 @@ html, body {
 
 .hero-text .btn {
     position: relative;
-    background-color: transparent;
+    background-color:  #678867f4;
     color: #000;
 }
 
@@ -890,7 +900,8 @@ html, body {
 }
 
 .subpage-hero.overlay:before {
-    background-color: rgba(38,39,45,0.5);
+    background-color: rgb(19, 19, 19);
+
 }
 
 .subpage-hero .hero-content,
@@ -905,6 +916,7 @@ html, body {
 
 .portfolio-hero {
     background-color:#678867ca;/* background: url(../img/portfolio-hero.jpg) no-repeat center / cover;      */
+    color: #000;
 }
 
 .blog-hero {
@@ -933,6 +945,7 @@ html, body {
     position: relative;
     margin: 0;
     padding-bottom: 70px;
+    color: white;
 }
 
 .heading-separator:after {
@@ -942,9 +955,9 @@ html, body {
     left: 0;
     right: 0;
     height: 2px;
-    width: 50px;
+    width: 75%;
     margin: 0 auto;
-    background-color: #267df4;
+    background-color: #ebebeb;
 }
 
 /* Section: Features */
@@ -1116,13 +1129,13 @@ html, body {
 /* FOOTER
 ================================================== */
 .site-footer {
-    background-color: #f5f5f8;
-    padding-top: 95px;
+    background-color: #f7f8f5;
+    padding-top: 25px;
 }
 
 .site-footer .site-title {
     display: inline-block;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .site-footer h3 {
@@ -1132,11 +1145,14 @@ html, body {
 }
 
 .site-footer > .container {
-    padding-bottom: 170px;
+    padding-bottom: 35px;
 }
 
 .site-footer .list-unstyled li + li {
     margin-top: 20px;
+}
+.contact-footer{
+    padding-top: 35px;
 }
 
 .contact-links li {
@@ -1149,7 +1165,7 @@ html, body {
     width: 20px;
     text-align: center;
     font-size: 18px;
-    color: #8c8f94;
+    color: #8c948c;
     transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
@@ -1168,20 +1184,14 @@ html, body {
 
 .list-unstyled li a,
 .list-unstyled li p {
-    font-size: 16px;
+    font-size: 18px;
     color: #8c8f94;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .list-unstyled li a:hover,
 .list-unstyled li.active a {
     color: #6fc754;
-}
-
-/* Copyright */
-.copyright {
-    padding: 30px 0;
-    border-top: 1px solid rgba(38, 41, 44, 0.05);
 }
 
 .social-links a {
@@ -1258,6 +1268,11 @@ a.linkedin-bg:hover {
     padding: 60px 0;
 }
 
+.subpage-site-section h2 {
+    padding-bottom: 40px;
+    font-size: 30px;
+}
+
 .breadcrumb {
     background-color: transparent;
     position: relative;
@@ -1278,12 +1293,14 @@ a.linkedin-bg:hover {
     line-height: 40px;
     min-width: 120px;
     font-size: 16px;
+    list-style: circle;
 }
 
 .portfolio-sorting li .active {
     background-color: #6fc754;
     color: #fff;  
-    box-shadow: none;   
+    box-shadow: none;  
+    list-style: circle;
 }
 
 #grid {
