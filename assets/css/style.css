@@ -63,7 +63,7 @@ p {
     margin-bottom: 0;
     /* font-size: 14px; */
     /* font-weight: 300; */
-    color: #678867ca;
+    color: #000000;
     /* line-height: 22px; */
 }
 
@@ -805,7 +805,8 @@ html, body {
 .hero {
     /* background: url(../img/circuit-board-1515557.jpg) no-repeat center / cover; */
     background-color: #336424;
-    height: 100%;
+    min-width: 500px;
+    height: 65%;
     width: 100%;
     display: table;
     position: relative;
@@ -824,12 +825,12 @@ html, body {
 }
 
 .hero-content {
-    background-color:  #678867ca;
+    background-color:  #678867f7;
     display: table-cell;
     vertical-align: middle;
-    padding-top: 55px;
-    margin: 20px;
-    background-color: #000;
+    /* padding-top: 55px; */
+    margin: 10%;
+    position: absolute;
 }
 .hero-content-subpage {
     background-color:#678867fa;
@@ -840,19 +841,21 @@ html, body {
 }
 
 .hero-text {
-    /* max-width: 1000px; */
+    /* max-width: 1500px; */
     width: 75%;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 3%;
     text-align: center;
     color: #000;
-    background-color:  #678867ca;
+    background-color:  #67886700;
+    align-items: center;
+    vertical-align: middle;
+
 }
 .hero-text-subpage {
     /* max-width: 1000px; */
     width: 100%;
-    margin: 0 auto;
-    padding: 0 15px;
+
     text-align: center;
     color: #000;
     background-color:  #678867ca;
@@ -880,29 +883,28 @@ html, body {
 
 .hero-text h3 {
     position: relative;
-    margin: 20;
-    margin: 20px;
+    /* margin: 20%; */
     color: #000;
     border-top: #000;
     background-color:  #678867fa;
-    padding: 80px;
     /* border-width: 20px;
     border-radius: 5px; */
 }
 
 .hero-text h1 {
     position: relative;
-    margin: 20;
     height: 80px;
     font-weight: 600;
-    color:#678867fa;
+    /* color:#678867fa; */
+    background-color:  #678867fa;
     color: rgb(0, 0, 0);
 }
 
 .hero-text h3 p {
     position: relative;
-    margin: 45px 0 30px;
+    font-size: larger;
     color: #000000;
+    font-weight: 500;
 }
 
 .hero-text .btn {
@@ -1104,6 +1106,11 @@ html, body {
     position: relative;
 }
 
+.subtitle-portfolio h2 h3{
+    margin: 0;
+    padding: 0;
+}
+
 .portfolio-item:before {
     content: "";
     position: absolute;
@@ -1128,7 +1135,7 @@ html, body {
     position: absolute;
     left: 0px;
     margin: 0;
-    font-size: 16px;
+    font-size: 26px;
     opacity: 0;
 }
 
