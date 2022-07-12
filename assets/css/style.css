@@ -49,7 +49,7 @@ a {
     cursor: pointer;
     /* color: #9fa3a7; */
     font-size: 50;
-    color: #678867ca;
+    color: #ffffffca;
 }
 
 a:focus,
@@ -814,7 +814,7 @@ html, body {
 
 .overlay:before {
   content: '';
-  background: url(../img/circuit-board-1515557.jpg) no-repeat center / cover;
+  background: url(../img/bg_circuit.jpg) no-repeat center / cover;
   /* background-color:  #678867ca; */
   height: 100%;
   width: 100%;
@@ -996,26 +996,28 @@ html, body {
 }
 .heading-separator-title{
     position: relative;
-    margin: 0;
+    margin: 20;
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     color: rgb(0, 0, 0);
 }
 .heading-separator:after {
     content: "";
     position: absolute;
-    bottom: 25px;
+    bottom: 5px;
+    /* padding-top: 10px; */
+    margin-top: 20px;
     left: 0;
     right: 0;
     height: 2px;
-    width: 75%;
+    width: 100%;
     margin: 0 auto;
     background-color: #ebebeb;
 }
 .heading-separator-title:after {
     content: "";
     position: absolute;
-    bottom: 10px;
+    bottom: 0px;
     left: 0;
     right: 0;
     height: 3px;
@@ -1029,7 +1031,7 @@ html, body {
     background-color: #678867ca
 }
 .section-features h2 {
-    padding-bottom: 40px;
+    padding-bottom: 2%;
     font-size: 30px;
 }
 
@@ -1106,9 +1108,10 @@ html, body {
     position: relative;
 }
 
-.subtitle-portfolio h2 h3{
+.subtitle-portfolio h2 h3 p{
     margin: 0;
-    padding: 0;
+    padding-bottom: 0;
+    font-size: medium;
 }
 
 .portfolio-item:before {
@@ -1359,17 +1362,27 @@ a.linkedin-bg:hover {
 }
 
 .portfolio-sorting li a {
-    line-height: 40px;
     min-width: 120px;
-    font-size: 16px;
+    font-size: 18px;
     list-style: circle;
+    color: #000000;
+    text-underline-position: below;
+    text-decoration: underline;
 }
 
-.portfolio-sorting li .active {
-    background-color: #6fc754;
-    color: #fff;
+.portfolio-sorting li a .hover {
+    color: #6fc754;
     box-shadow: none;
     list-style: circle;
+}
+.portfolio-sorting li a .active {
+    color: #6fc754;
+    box-shadow: none;
+    list-style: circle;
+}
+.portfolio-sorting li a:hover,
+.list-unstyled li.active a {
+    color: #2a8e0b;
 }
 
 #grid {
