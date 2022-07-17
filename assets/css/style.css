@@ -1038,7 +1038,7 @@ html, body {
 }
 
 .section-features img {
-    position: absolute;
+    position: relative;
     right: 15px;
     height: 380px;
     background-color:#678867ca
