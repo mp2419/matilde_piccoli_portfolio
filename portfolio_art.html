@@ -35,7 +35,9 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/responsive.css" rel="stylesheet">
-
+    <link href="code/jquery.mThumbnailScroller.css" rel="stylesheet" />
+    <script src="code/jquery-3.6.0.min.js"></script>
+    <script src="code/jquery.mThumbnailScroller.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -81,7 +83,6 @@
             </div>   
         </nav><!-- /.site-navigation -->
     </header><!-- /#mastheaed -->
-
     <div id="hero" class="hero subpage-hero portfolio-hero">
         <div class="hero-content-subpage">
              <div class="heading-separator-title hero-text-subpage"><!-- could add heading-separator-title -->
@@ -98,12 +99,11 @@
             </ol>
         </div><!-- /.hero-content -->
     </div><!-- /.hero -->
-
     <main id="main" class="site-main ">
-        <section class="site-section section-features">
+        <section class="site-section section-features art_style">
             <div class="container ">
                 <div class="row " >
-                        <ul class="portfolio-sorting  text-center">
+                        <ul class="portfolio-sorting  text-center art_style">
                             <!-- <h2 class="subtitle-portfolio"><b>Circuits and Systems - Laboratory</b></h2> -->
                             <h3><p>I think of Art as a collective journey through the individual subconscious. It is unexplicit and intimate research, and yet a universal way of expression.<br>I am deeply fascinated by the connection between different Arts with each other, and with the human psyche. It is from the study of Literature and Philosophy and my experiences in Music and Theatrical performances, that my passion and commitment to Visual Arts were born. 
                             <br> I  particularly like to focus on the human figure and interiority by experimenting with multi-media drawing.<br></p> </h3>  <br>                          
@@ -111,46 +111,68 @@
                     </div>
                 </div>
             <!-- TODO https://www.30secondsofcode.org/css/s/horizontal-gallery  -->
-            <div class="container" >
-                <div class="row text-center" >
-                    <h2 class="heading-separator text-center">Some Artworks</h2>
-                    <div class="row " >
-                        <iframe src="assets/attachments/art1 (1).pdf" width="75%" height="500px">
-                        </iframe>
-                        <!-- <img src="assets/attachments/[Untitled]_2-3-rotated.pdf" width="100%" alt="" >                                  -->
-
+        </section><!-- /.section-portfolio -->
+        <section class="site-section subpage-site-section  section-portfolio art_style">
+            <div class="container">
+                <div class="row ">
+                    <a id="projects"><h2 class="heading-separator text-center">Some Artworks</h2></a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-xs-6" data-groups='["webdesign"]'>
+                        <div class="portfolio-item">
+                            <img src="assets/art/illustrations/quaderno3 (7).jpg" class="img-res" alt="">
+                            <h4 class="portfolio-item-title">Guts' <br> Illustrations</h4>
+                            <a href="art_illustrations.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                            <!-- <a href="proj_robotics.html" class="btn btn-gray">View</a> -->
+                        </div><!-- /.portfolio-item -->
                     </div>
-                    <div class="row " >
-                        <iframe src="assets/attachments/art1 (2).pdf" width="75%" height="500px">
-                        </iframe>
-                        <!-- <img src="assets/attachments/[Untitled]_2-3-rotated.pdf" width="100%" alt="" >                                  -->
-
+                    <div class="col-lg-4 col-md-4 col-xs-6" data-groups='["photography"]'>
+                        <div class="portfolio-item">
+                            <img src="assets/art/quaderno3 (23).jpg" class="img-res" alt="">
+                            <h4 class="portfolio-item-title">Singles</h4>
+                            <a href="art_paintings.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
                     </div>
-                    <div class="row " >
-                        <iframe src="assets/attachments/art1 (3).pdf" width="75%" height="500px">
-                        </iframe>
-                        <!-- <img src="assets/attachments/[Untitled]_2-3-rotated.pdf" width="100%" alt="" >                                  -->
-
+                    <div class="col-lg-4 col-md-4 col-xs-6" data-groups='["mobileapp"]'>
+                        <div class="portfolio-item">
+                            <img src="assets/art/quaderno1 (20).jpg" class="img-res" alt="">
+                            <h4 class="portfolio-item-title">Little <br> Visions</h4>
+                            <a href="art_scenes.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
                     </div>
-                    <div class="row " >
-                        <iframe src="assets/attachments/art4.pdf" width="75%" height="500px">
-                        </iframe>
-                        <!-- <img src="assets/attachments/[Untitled]_2-3-rotated.pdf" width="100%" alt="" >                                  -->
-
+                    <div class="col-lg-4 col-md-4 col-xs-6" data-groups='["illustration"]'>
+                        <div class="portfolio-item">
+                            <img src="assets/art/quaderno3 (56).jpg" class="img-res" alt="">
+                            <h4 class="portfolio-item-title">Studies</h4>
+                            <a href="art_studies.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
                     </div>
-                    <div class="row " >
-                        <iframe src="assets/attachments/art2.pdf" width="75%" height="500px">
-                        </iframe>
-                        <!-- <img src="assets/attachments/[Untitled]_2-3-rotated.pdf" width="100%" alt="" >                                  -->
-
+                    <div class="col-lg-4 col-md-4 col-xs-6" data-groups='["branding"]'>
+                        <div class="portfolio-item">
+                            <img src="assets/art/quaderno1 (17).jpg" class="img-res" alt="">
+                            <h4 class="portfolio-item-title">Expressions</h4>
+                            <a href="art_cartoons.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
                     </div>
-                    <div class="row " >
-                        <iframe src="assets/attachments/art3.pdf" width="75%" height="500px">
-                        </iframe>
-                        <!-- <img src="assets/attachments/[Untitled]_2-3-rotated.pdf" width="100%" alt="" >                                  -->
-
+                    <div class="col-lg-4 col-md-4 col-xs-6" data-groups='["branding"]'>
+                        <div class="portfolio-item">
+                            <img src="assets/art/quaderno1 (38).jpg" class="img-res" alt="">
+                            <h4 class="portfolio-item-title">Details</h4>
+                            <a href="art_details.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div><!-- /.portfolio-item -->
                     </div>
-                    <h2><b>Complete Catalogue - coming soon</b></h2>
+
+                    <!-- <div class="col-lg-4 col-md-4 col-xs-6" data-groups='["photography"]'>
+                        <div class="portfolio-item">
+                            <img src="assets/img/markus-spiske-MgtHZ4zlC1U-unsplash.jpg" class="img-res" alt="">
+                            <h4 class="portfolio-item-title">Others</h4>
+                            <a href="proj_others.html"><i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                        </div>
+                    </div> -->
+
+                </div>
+
+            </div>
         </section><!-- /.section-portfolio -->
 
     </main><!-- /#main -->
@@ -183,19 +205,22 @@
         </div>
     </footer><!-- /#footer -->
 
-
-
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap-select.min.js"></script>
-    <script src="assets/js/jquery.slicknav.min.js"></script>
-    <script src="assets/js/jquery.countTo.min.js"></script>
-    <script src="assets/js/jquery.shuffle.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  
+
+    <script>
+        $(document).ready(function () {
+            $("#malihu").mThumbnailScroller();
+            $("#malihu2").mThumbnailScroller();
+            $("#malihu2 img").click( function() {
+                $('#picture').attr('src', $(this).data('src'));
+                $('#picture').attr('alt', $(this).attr('alt'));
+            });
+            $("#malihu3").mThumbnailScroller({
+                type:"click-50",
+                theme:"buttons-in"
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Thumbnail Scroller Test</title>
+        <!-- thumbnail scroller stylesheet -->
+        <link href="code/jquery.mThumbnailScroller.css" rel="stylesheet" />
+		<script src="code/jquery-3.6.0.min.js"></script>
+        <script src="code/jquery.mThumbnailScroller.js"></script>
+    </head>
+    <body>
+		<h1>Default Malihu Thumbnail Scroller</h1>
+        <div id="malihu" style="overflow: auto; width: 500px; height: auto;">
+			<ul>
+				<li><img src="images/breads_thumbnail.jpg" alt="Breads"/></li>
+				<li><img src="images/oranges_thumbnail.jpg" alt="Oranges"/></li>
+				<li><img src="images/butternut_squash_thumbnail.jpg" alt="Butternut Squash"/></li>
+				<li><img src="images/carrots_thumbnail.jpg" alt="Carrots"/></li>
+				<li><img src="images/chickens_at_market_thumbnail.jpg" alt="Chickens at Market"/></li>
+				<li><img src="images/edible_fungi_thumbnail.jpg" alt="Edible Fungi"/></li>
+				<li><img src="images/fish_at_market_thumbnail.jpg" alt="Fish at Market"/></li>
+				<li><img src="images/flaming_cocktails_thumbnail.jpg" alt="Flaming Cocktails"/></li>
+				<li><img src="images/orange_juice_thumbnail.jpg" alt="Orange Juice"/></li>
+				<li><img src="images/peaches_thumbnail.jpg" alt="Peaches"/></li>
+				<li><img src="images/peppers_thumbnail.jpg" alt="Peppers"/></li>
+				<li><img src="images/pomegranate_thumbnail.jpg" alt="Pomegranate"/></li>
+				<li><img src="images/pumpkins_thumbnail.jpg" alt="Pumpkins"/></li>
+				<li><img src="images/wine_cheese_bread_thumbnail.jpg" alt="Wine, Cheese and Bread"/></li>
+				<li><img src="images/soft_cheese_thumbnail.jpg" alt="Soft Cheese"/></li>
+			</ul>
+		</div>
+		<h1>Malihu Thumbnail Scroller Based Image Gallery</h1>
+		<div id="malihu2" style="overflow: auto; width: 500px; height: auto;">
+			<ul>
+				<li><a href="#malihu2"><img src="images/breads_thumbnail.jpg" alt="Breads" data-src="images/breads.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/oranges_thumbnail.jpg" alt="Oranges" data-src="images/oranges.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/butternut_squash_thumbnail.jpg" alt="Butternut Squash" data-src="images/butternut_squash.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/carrots_thumbnail.jpg" alt="Carrots" data-src="images/carrots.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/chickens_at_market_thumbnail.jpg" alt="Chickens at Market" data-src="images/chickens_at_market.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/edible_fungi_thumbnail.jpg" alt="Edible Fungi" data-src="images/edible_fungi.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/fish_at_market_thumbnail.jpg" alt="Fish at Market" data-src="images/fish_at_market.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/flaming_cocktails_thumbnail.jpg" alt="Flaming Cocktails" data-src="images/flaming_cocktails.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/orange_juice_thumbnail.jpg" alt="Orange Juice" data-src="images/orange_juice.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/peaches_thumbnail.jpg" alt="Peaches" data-src="images/peaches.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/peppers_thumbnail.jpg" alt="Peppers" data-src="images/peppers.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/pomegranate_thumbnail.jpg" alt="Pomegranate" data-src="images/pomegranate.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/pumpkins_thumbnail.jpg" alt="Pumpkins" data-src="images/pumpkins.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/wine_cheese_bread_thumbnail.jpg" alt="Wine, Cheese and Bread" data-src="images/wine_cheese_bread.jpg"/></a></li>
+				<li><a href="#malihu2"><img src="images/soft_cheese_thumbnail.jpg" alt="Soft Cheese" data-src="images/soft_cheese.jpg"/></a></li>
+			</ul>
+			<img id="picture" src="images/breads.jpg" alt="Breads" style="max-width: 100%; height: auto !important;"/>
+        </div>
+		<h1>Scroll Thumbnails on Mouse Clicks</h1>
+        <div id="malihu3" style="overflow: auto; width: 500px; height: auto;">
+			<ul>
+				<li><img src="images/breads_thumbnail.jpg" alt="Breads"/></li>
+				<li><img src="images/oranges_thumbnail.jpg" alt="Oranges"/></li>
+				<li><img src="images/butternut_squash_thumbnail.jpg" alt="Butternut Squash"/></li>
+				<li><img src="images/carrots_thumbnail.jpg" alt="Carrots"/></li>
+				<li><img src="images/chickens_at_market_thumbnail.jpg" alt="Chickens at Market"/></li>
+				<li><img src="images/edible_fungi_thumbnail.jpg" alt="Edible Fungi"/></li>
+				<li><img src="images/fish_at_market_thumbnail.jpg" alt="Fish at Market"/></li>
+				<li><img src="images/flaming_cocktails_thumbnail.jpg" alt="Flaming Cocktails"/></li>
+				<li><img src="images/orange_juice_thumbnail.jpg" alt="Orange Juice"/></li>
+				<li><img src="images/peaches_thumbnail.jpg" alt="Peaches"/></li>
+				<li><img src="images/peppers_thumbnail.jpg" alt="Peppers"/></li>
+				<li><img src="images/pomegranate_thumbnail.jpg" alt="Pomegranate"/></li>
+				<li><img src="images/pumpkins_thumbnail.jpg" alt="Pumpkins"/></li>
+				<li><img src="images/wine_cheese_bread_thumbnail.jpg" alt="Wine, Cheese and Bread"/></li>
+				<li><img src="images/soft_cheese_thumbnail.jpg" alt="Soft Cheese"/></li>
+			</ul>
+		</div>
+        <script>
+            $(document).ready(function () {
+                $("#malihu").mThumbnailScroller();
+				$("#malihu2").mThumbnailScroller();
+				$("#malihu2 img").click( function() {
+					$('#picture').attr('src', $(this).data('src'));
+					$('#picture').attr('alt', $(this).attr('alt'));
+                });
+				$("#malihu3").mThumbnailScroller({
+					type:"click-50",
+					theme:"buttons-in"
+				});
+            });
+        </script>
+    </body>
+</html>
