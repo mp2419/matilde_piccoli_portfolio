@@ -15,25 +15,31 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/circuit-board-texture-2-1184404.jpg">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/circuit-board-texture-2-1184404.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/circuit-board-texture-2-1184404.jpg">
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/img/circuit-board-texture-2-1184404.jpg">
     <!-- Stylesheets -->
     <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
+    <link href="../assets/css/style.css" rel="stylesheet">
+    <link href="../assets/css/responsive.css" rel="stylesheet">
     <link href="code/jquery.mThumbnailScroller.css" rel="stylesheet" />
     <style>
-        #malihu3 {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-gap: 10px;
-            overflow: auto;
+        #malihu3 ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        #malihu3 li {
+            margin: 10px;
         }
 
         #malihu3 img {
-            width: 100%;
+            width: 250px;
             height: auto;
             cursor: pointer;
         }
@@ -48,38 +54,44 @@
         $(document).ready(function() {
             // Array of image paths
             var imagePaths = [
-                "assets/art/quaderno4/q4_25.jpg",
-                "assets/art/quaderno4/q4_25.jpg",
-                "assets/art/quaderno4/q4_25.jpg",
-                "assets/art/quaderno4/q4_25.jpg",
-                "assets/art/quaderno4/q4_25.jpg",
-                "assets/art/quaderno4/q4_25.jpg",
-                "assets/art/quaderno4/q4_25.jpg",
-                "assets/art/quaderno4/q4_25.jpg",
-                "assets/art/quaderno4/q4_25.jpg",
-                "assets/art/quaderno4/q4_25.jpg",
-                "assets/art/quaderno4/q4_25.jpg",
-                "assets/art/quaderno4/q4_25.jpg",
-                "assets/art/quaderno4/q4_25.jpg"
+                "../assets/art/quaderno4/q4_25.jpg",
+                "../assets/art/quaderno4/q4_25.jpg",
+                "../assets/art/quaderno4/q4_25.jpg",
+                "../assets/art/quaderno4/q4_25.jpg",
+                "../assets/art/quaderno4/q4_25.jpg",
+                "../assets/art/quaderno4/q4_25.jpg",
+                "../assets/art/quaderno4/q4_25.jpg",
+                "../assets/art/quaderno4/q4_25.jpg",
+                "../assets/art/quaderno4/q4_25.jpg",
+                "../assets/art/quaderno4/q4_25.jpg",
+                "../assets/art/quaderno4/q4_25.jpg",
+                "../assets/art/quaderno4/q4_25.jpg",
+                "../assets/art/quaderno4/q4_25.jpg"
+                // Add more image paths here
             ];
 
             // Load images dynamically
-            var $imageContainer = $("#malihu3");
+            var $imageList = $("#malihu3 ul");
             imagePaths.forEach(function(path) {
                 var $image = $("<img>")
                     .attr("src", path)
                     .attr("data-src", path)
-                    .click(function() {
-                        // Handle enlargement here
-                        console.log("Image clicked:", path);
-                    });
-                $imageContainer.append($image);
+                    .css("height", "250px");
+                var $listItem = $("<li>").append($("<a>").attr("href", "#malihu2").append($image));
+                $imageList.append($listItem);
             });
 
             // Initialize mThumbnailScroller
-            $imageContainer.mThumbnailScroller({
+            $("#malihu3").mThumbnailScroller({
                 type: "click-50",
                 theme: "buttons-in"
+            });
+
+            // Image click action
+            $("#malihu3 img").click(function() {
+                var imageSrc = $(this).attr("data-src");
+                // Display or handle enlarged image as desired
+                console.log("Image clicked:", imageSrc);
             });
         });
     </script>
@@ -129,7 +141,9 @@
             <div class="container">
                 <div class="row text-center">
                     <h2 class="heading-separator text-center"></h2>
-                    <div id="malihu3"></div>
+                    <div id="malihu3" style="overflow: auto; width: 100%; height: auto; text-align: center;">
+                        <ul style="height: auto; width: fit-content;"></ul>
+                    </div>
                     <h3>For the complete catalogue, please contact me directly.</h3>
                 </div>
             </div>
@@ -138,10 +152,4 @@
     <footer id="colophon" class="site-footer">
         <div class="container">
             <div class="row text-center">
-                <button class="btn btn-green" type="button"><a href="assets/attachments/Matilde Piccoli CV.pdf" download>Download CV (PDF)</a></button>
-            </div> 
-        </div>
-    </footer><!-- /#footer -->
-    <!-- Bootstrap core JavaScript -->
-</body>
-</html>
+                <button class="btn btn-green" type="button"><a href="../assets/attachments/Matilde Piccoli CV.pdf" download>Download CV (PDF)</a></button
