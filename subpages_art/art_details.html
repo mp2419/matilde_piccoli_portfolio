@@ -35,6 +35,8 @@
     <!-- Custom styles for this template -->
     <link href="../assets/css/style.css" rel="stylesheet">
     <link href="../assets/css/responsive.css" rel="stylesheet">
+    <link href="../assets/css/grid.css" rel="stylesheet">
+
     <link href="code/jquery.mThumbnailScroller.css" rel="stylesheet" />
     <script src="code/jquery-3.6.0.min.js"></script>
     <script src="code/jquery.mThumbnailScroller.js"></script>
@@ -200,28 +202,45 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
 
-    <script>
-        $(document).ready(function () {
-            $("#malihu3").mThumbnailScroller({
-                type:"click-50",
-                theme:"buttons-in"
-            });
-            $("#malihu4").mThumbnailScroller({
-                type:"click-50",
-                theme:"buttons-in"
-            });
-            $("#malihu5").mThumbnailScroller({
-                type:"click-50",
-                theme:"buttons-in"
-            });
-            $("#malihu").mThumbnailScroller();
-            $("#malihu2").mThumbnailScroller();
-            $("#malihu2 img").click( function() {
-                $('#picture').attr('src', $(this).data('src'));
-                $('#picture').attr('alt', $(this).attr('alt'));
-            });
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>$(document).ready(function () {
+        var imageGrid = $("#imageGrid");
+        var modalImage = $("#modalImage");
+        var modal = $("#imageModal");
+    
+        var imageFileNames = [
 
+        ];
+    
+        // Generate grid items dynamically
+        imageFileNames.forEach(function (fileName, index) {
+            var gridItem = $("<div class='grid-item'></div>");
+            var img = $("<img />", {
+                src: "../assets/art/" + fileName,
+                alt: "Image " + (index + 1),
+                class: "hoverable-image",
+            });
+    
+            img.appendTo(gridItem);
+            gridItem.appendTo(imageGrid);
+    
+            // Add hover event to each dynamically created image
+            img.hover(
+                function () {
+                    modalImage.attr("src", $(this).attr("src"));
+                    modal.show();
+                },
+                function () {
+                    modal.hide();
+                }
+            );
         });
+    
+        // Close modal when clicking the close button
+        $(".close-modal").click(function () {
+            modal.hide();
+        });
+    });
     </script>
 </body>
 </html>
