@@ -1,0 +1,242 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alore&family=Raleway:wght@300;400;600&display=swap');
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('assets/img_og/tree.png') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.hero-section .hero-box {
+    background-color: #ffffff; /* White background */
+    opacity: 0.95; /* Slight transparency */
+    padding: 30px 20px; /* Inner spacing */
+    border: none; /* Remove any unwanted borders */
+    width: 80%; /* Adjust width */
+    max-width: 900px; /* Ensure the box doesn't grow too wide */
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: 'Raleway', serif; /* Artistic serif font */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.6;
+    font-family: 'Raleway', sans-serif; /* Clean sans-serif for body text */
+    margin: 0; /* Ensure no unnecessary margins */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-section .hero-box {
+        width: 90%; /* Adjust box width for smaller screens */
+    }
+
+    .hero-section h1 {
+        font-size: 3rem; /* Adjust title size */
+    }
+
+    .hero-section p {
+        font-size: 1rem; /* Adjust paragraph size */
+    }
+}
+
+
+/* In a Nutshell Section */
+.nutshell-section {
+    background-color:  #678867ca; /* Green background */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.nutshell-section h2 {
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: white;
+    font-family: 'Raleway', serif; /* Elegant serif for section titles */
+}
+
+.nutshell-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 0px;
+    width: 75%;
+    margin: auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    color: black;
+    line-height: 1.8;
+    font-family: 'Raleway', sans-serif; /* Keep body text clean and readable */
+}
+
+/* Navbar */
+.navbar-dark .navbar-nav .nav-link {
+    font-family: 'Raleway', serif; /* Elegant font for navigation links */
+    font-weight: 400;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #678867ca; /* Match the green accent */
+}
+
+/* foooooter */
+
+.contact-footer {
+    padding-top: 3px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 20px; /* Spacing between each contact item */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-links li {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.contact-links li i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: white; /* Icon color */
+}
+
+.contact-links li a {
+    font-size: 18px;
+    color: #8c8f94;
+    text-decoration: none;
+    font-weight: 400;
+}
+
+.contact-links li a:hover {
+    color: #678867ca; /* Green hover color */
+}
+
+/* Footer Styles */
+.site-footer {
+    background-color: #040404; /* Black background */
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+.site-footer .footer-container {
+    display: flex;
+    justify-content: space-evenly; /* Even spacing between items */
+    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 20px; /* Add spacing between items */
+}
+
+/* Individual Contact Items */
+.site-footer .contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    gap: 10px; /* Space between icon and text */
+}
+
+.site-footer .contact-item i {
+    font-size: 20px;
+    color: white; /* Icon color */
+}
+
+.site-footer .contact-item:hover {
+    color: #678867ca /* Green hover effect */
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .site-footer .footer-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    .site-footer .contact-item {
+        justify-content: center; /* Center align for smaller screens */
+    }
+}
+
+
+/* butttttttttons */
+
+.btn {
+    line-height: 50px;
+    /* min-width: 200px; */
+    font-size: 22px;
+    font-weight: 400;
+    border: 0;
+    border-radius: 50px;
+    color: #26272d;
+    background-color: #fff;
+    padding: 50;
+    transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -moz-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -webkit-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -o-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    -ms-transition: color 0.25s ease-in-out, background-color 0.25s ease-in-out;
+    margin: 5%;
+}
+
+.btn-border {
+    border: 1px solid #26272d;
+}
+
+.btn-fill {
+    background-color: #f6fbda;
+    color: #fff;
+}
+
+.btn-gray {
+    background-color: #f5f5f8;
+    color: #26272d;
+}
+
+.btn-green {
+    background-color: #678867ca;
+    color: #fff;
+}
+
+.btn:hover,
+button.btn:hover,
+.btn:focus,
+button.btn:focus {
+    background-color: #26272d;
+    color: #fff;
+}
+
+.btn-gray:hover,
+.btn-gray:focus {
+    background-color: #678867ca;
+    color: #fff;
+}
