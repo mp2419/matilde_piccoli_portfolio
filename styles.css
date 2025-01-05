@@ -102,6 +102,32 @@ body {
     color: #678867ca; /* Match the green accent */
 }
 
+.offcanvas {
+    background-color: #040404; /* Black background for side window */
+    color: white;
+}
+
+.offcanvas .nav-link {
+    color: white; /* White by default */
+    text-decoration: none;
+    font-size: 18px; /* Slightly larger for better readability in side menu */
+    padding: 10px 0; /* Add some spacing for better visibility */
+    transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.offcanvas .nav-link:hover {
+    color: #678867ca; /* Green on hover */
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #333; /* Subtle border for separation */
+}
+
+.offcanvas-title {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    color: white;
+}
 /* foooooter */
 
 .contact-footer {
@@ -239,4 +265,183 @@ button.btn:focus {
 .btn-gray:focus {
     background-color: #678867ca;
     color: #fff;
+}
+
+/* curriculuuuuum */
+
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: #678867ca; /* Background color */
+    color: #333;
+}
+
+/* Curriculum Vitae Title */
+#main .site-section:first-of-type {
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#main .site-section:first-of-type h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+/* Section Boxes (Education and Professional Experience) */
+.section-features .row {
+    margin-bottom: 30px;
+}
+
+.section-features .row .col-lg-10 {
+    background-color: #ffffff; /* White box */
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-features .row h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.section-features .row h4 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: #666;
+}
+
+/* TODO see portfolio item style of old style in assets */
+/* Portfolio Section */
+.section-portfolio .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-portfolio .portfolio-item img {
+    width: 100%; /* Small responsive images */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.section-portfolio .portfolio-item:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.section-portfolio .portfolio-item h4 {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.7); /* Text background */
+    padding: 5px 10px;
+    border-radius: 0; /* No rounded corners */
+    transition: all 0.3s ease;
+}
+
+.section-portfolio .portfolio-item:hover h4 {
+    background-color: #6fc754; /* Green hover effect */
+    color: #ffffff;
+}
+
+.section-portfolio .portfolio-item a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #6fc754;
+    padding: 10px 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.section-portfolio .portfolio-item:hover a {
+    opacity: 1;
+}
+
+
+.site-section {
+    margin: 20px 0;
+}
+
+/* Curriculum Vitae Title */
+.site-section:first-of-type h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+
+/* Title */
+
+
+/* White Box for Education and Experience */
+.education-box, .experience-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.education-box h3, .experience-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.education-box ul, .experience-box ul {
+    padding-left: 20px;
+}
+
+.education-box ul li, .experience-box ul li {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Skills Section */
+.section-skills .skill-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.section-skills .skill-box h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.section-skills ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+.section-skills ul li {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 10px;
 }
