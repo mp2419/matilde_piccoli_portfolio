@@ -1,23 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matilde Piccoli</title>
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -26,169 +15,125 @@
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/circuit-board-texture-2-1184404.jpg">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/circuit-board-texture-2-1184404.jpg">
-
-    <!-- Stylesheets
-    ================================================== -->
-    <!-- Bootstrap core CSS -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
 </head>
+
 <body>
+    <!-- Top Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+            <div class="container-fluid">
+                <!-- Brand Name -->
+                <a class="navbar-brand" href="#">Matilde Piccoli</a>
 
-    <header id="masthead" class="site-header">
-        <nav id="primary-navigation" class="site-navigation">
-            <div class="container">
+                <!-- Hamburger Button for Small Screens -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sideMenu" aria-controls="sideMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-                <div class="navbar-header">
-                   
-                    <a class="site-title"><span>Matilde Piccoli</span></a>
-
-                </div>
-
-                <div class="collapse navbar-collapse" id="agency-navbar-collapse">
-
-                    <ul class="nav navbar-nav navbar-right">
-
-                        <li class="active"><a href="index.html"> Home</a></li>
-                        <li><a href="portfolio.html"> Scientific Portfolio</a></li>
-                        <li><a href="portfolio_art.html">Artistic Portfolio</a></li>
-
-                    </ul>
-
-                </div>
-
-            </div>   
-        </nav><!-- /.site-navigation -->
-    </header>
-    
-        <div id="hero" class="hero overlay">
-            <div class="hero-content">
-            <div class="row">
-                <div class="hero-text">
-                    <!-- <img src="assets/img/ipad-pro.png" alt=""> -->
-                    <!-- TODO logo bianco e nero faccia di presentazione, articitco, minimal, professionale -->
-                    <h1>Hello,</h1>
-                    <h3>
-                        <p>I am Matilde Piccoli and have recently graduated with a Master's in Electronic and Electrical Engineering at Imperial College London.  My expertise lies in Circuit Design, Robotics and Signal Processing.  <br> I am looking for research opportunities, with a particular interest in Biomedical Technologies and NeuroEngineering. </p>
-                        
-                    </h3>
-                    
-
-                </div><!-- /.hero-text -->
-            </div>
-            </div><!-- /.hero-content -->
-        </div><!-- /.hero -->
-    
-    <main id="main" class="site-main">
-
-        <!-- <section class="site-section section-features">
-            <div class="container">
-                <div class="row">
-                        <h2>In a nutshell</h2>
-                        <h2>Timeline</h2>
-                        <h2>Goals</h2> -->
-                    <!-- <div class="col-sm-7 hidden-xs">
-                    </div> -->
-                <!-- </div>
-            </div>
-        </section>/.section-features -->
-        <section class="site-section section-features">
-            <div class="container ">
-                <div class="row text-center" >
-                        <h2 class="heading-separator text-center">In a nutshell</h2>
-                        <ul class="portfolio-sorting  text-center">
-                            <h3 class="subtitle-portfolio"><p>I am eager to get involved in a research context that values a diverse range of experiences, as I have always found that broadening one's background can only benefit one's technical and field-specific work. From this, I frist pursued a Diploma in Classics at high school, and now, I am committed on maintaining both my Engineering and Visual Arts professional projects. </p>
-                            <p>I find motivation in the social impact that my work could have.  <br> I am very interested in the human brain and psyche, and am eager to contribute to the research surrounding it, from Neuromorphic Computing and Artificial Intelligence, all the way to Psychology and Cognitive neuroscience.  </p>
-                            </h3>
-                            
-                        </ul>
-                        <a href="portfolio.html" class="btn btn-green">Scientific Portfolio</a>
-                        <a href="portfolio_art.html" class="btn btn-green">Artistic Portfolio</a>
-                </div>
-            </div>
-        </section><!-- /.section-features -->
-        <!-- <section class="site-section section-features">
-            <div class="container ">
-                <div class="row text-center" >
-                    <h2 class="heading-separator text-center">Explore my Portfolios</h2>
-                    <a href="portfolio.html" class="btn btn-green">Scientific Portfolio</a>
-                    <a href="portfolio_art.html" class="btn btn-green">Artistic Portfolio</a>
-                </div>
-            </div>
-        </section>/.section-portfolio -->
-        <section class="site-section section-features">
-            <div class="container ">
-                <div class="row " >
-                    <a id="skills"><h2 class="heading-separator text-center">Discover my Technical Skills</h2></a>
-                </div>
-                <div class="row " >
-                <ul class="list-inline text-center">
-                    <li><a href="subpages_eng/proj_circuits.html" class="btn btn-gray" data-group="photography">Circuits Design</a></li>
-                    <li><a href="subpages_eng/proj_biomed.html" class="btn btn-gray" data-group="illustration">Biomedical Technologies</a></li>
-                    <li><a href="subpages_eng/proj_robotics.html" class="btn btn-gray" data-group="photography">Robotics</a></li>
-                </ul> 
-                <ul class="list-inline text-center">
-                    <li><a href="subpages_eng/proj_deeplearn.html" class="btn btn-gray" data-group="branding">Machine Learning</a></li>
-                    <li><a href="subpages_eng/proj_embedded.html" class="btn btn-gray" data-group="webdesign">Embedded Systems</a></li>
-                    <li><a href="portfolio_art.html" class="btn btn-gray" data-group="illustration">Visual Arts</a></li>
-                </ul> 
-                </div>
-            </div>
-        </section><!-- /.section-features -->
-
-
-
-    </main><!-- /#main -->
-
-    <footer id="colophon" class="site-footer">
-        <div class="container">
-            <div class="row text-center">
-                <button class="btn btn-green" type="button"><a href="assets/attachments/Matilde Piccoli CV.pdf" download>Download CV (PDF)</a></button>
-            </div> 
-            <div class="row contact-footer">
-                    <ul class="list-inline text-center">
-                        <li>
-                            <ul class="list-unstyled contact-links">
-                            <li><a class="linkedin-bg"  aria-hidden="true" href="https://www.linkedin.com/in/matilde-piccoli"><i class="fa fa-linkedin"></i></a>
-                                <a href="https://www.linkedin.com/in/matilde-piccoli">matilde.piccoli </a></li>
-                            </ul>
+                <!-- Navigation Links for Large Screens -->
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li>
-                            <ul class="list-unstyled contact-links">
-                                <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:matilde.piccoli@gmail.com">matilde.piccoli@gmail.com</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="CV.html">Complete Bio</a>
                         </li>
-                        <li>
-                            <ul class="list-unstyled contact-links">
-                                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+447747651727">+44 7747651727</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="visual_portfolio.html">Visual Portfolio</a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Sidebar Menu for Small Screens -->
+        <div class="offcanvas offcanvas-start bg-black" id="sideMenu" tabindex="-1" aria-labelledby="sideMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title text-white" id="sideMenuLabel">Menu</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="CV.html">Complete Bio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="visual_portfolio.html">Visual Portfolio</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer><!-- /#footer -->
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-box">
+            <h1>Hello,</h1>
+            <p>
+                I am Matilde Piccoli and work between Technology and Visual Arts. <br>
+                I hold a Master's in Electronic and Electrical Engineering at Imperial College London and I am a freelance Visual Communicator.
+                My expertise lies in Data Analysis, Creative Storytelling, and Artificial Intelligence.
+            </p>
+        </div>
+    </section>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/bootstrap-select.min.js"></script>
-    <script src="assets/js/jquery.slicknav.min.js"></script>
-    <script src="assets/js/jquery.countTo.min.js"></script>
-    <script src="assets/js/jquery.shuffle.min.js"></script>
-    <script src="assets/js/script.js"></script>
-  
+    <!-- In a Nutshell Section -->
+    <section class="nutshell-section text-center">
+        <div class="container">
+            <h2 class="text-white mb-3">In a Nutshell</h2>
+            <div class="nutshell-box mx-auto">
+                <p class="text-black">
+                    I am eager to contribute to a dynamic environment that values diverse perspectives, as I firmly believe that a broad range of experiences enriches field-specific expertise and fosters innovative solutions. <br><br>
+                    During university, I was committed to pursuing a Master's in Engineering while simultaneously developing my drawing practice. I gained diverse research and world-leading industry experiences in Electronics. Following graduation, I also dedicated time to experimenting with artistic collaborations worldwide and furthering my professional expertise in Illustration and Visual Communication.
+                    <br><br>
+                    Now, I am striving to merge everything I have learned. I am combining my visual techniques and storytelling skills with my data manipulation abilities and insights into the tech world to analyze and communicate critical subjects, such as the social impact of technology and the environmental transition. 
+                </p>
+            </div>
+            <a href="CV.html" class="btn btn-green">Curriculum Vitae</a>
+            <a href="visual_portfolio.html" class="btn btn-green">Visual Portfolio</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/matilde-piccoli" target="_blank" class="contact-item">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                matilde.piccoli
+            </a>
+    
+            <!-- Email -->
+            <a href="mailto:matilde.piccoli@gmail.com" class="contact-item">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                matilde.piccoli@gmail.com
+            </a>
+    
+            <!-- Phone -->
+            <a href="tel:+33745599040" class="contact-item">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                +33745599040
+            </a>
+    
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/matilde.piccoli" target="_blank" class="contact-item">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+                @mainas.art
+            </a>
+    
+            <!-- TODO Download CV
+            <a href="assets/attachments/Matilde_Piccoli_CV.pdf" download class="contact-item">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                Download CV
+            </a> -->
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
