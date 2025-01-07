@@ -9,6 +9,17 @@ body {
     color: #333;
 }
 
+/* General Link Styling */
+a {
+    color: #0b440b; /* Yellow color for links */
+    transition: color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+a:hover {
+    color: #afe7af; /* Darker shade of yellow (orange) on hover */
+}
+
+
 /* Hero Section */
 .hero-section {
     background: url('assets/img_og/tree.png') no-repeat center center/cover;
@@ -22,7 +33,7 @@ body {
 }
 
 .hero-section .hero-box {
-    background-color: #ffffff; /* White background */
+    background-color: #cae4caca; /* White background */
     opacity: 0.95; /* Slight transparency */
     padding: 30px 20px; /* Inner spacing */
     border: none; /* Remove any unwanted borders */
@@ -78,7 +89,7 @@ body {
 }
 
 .nutshell-box {
-    background-color: #ffffff;
+    background-color: #a9dba9ca;/* In a Nutshell Section */
     padding: 20px;
     border-radius: 0px;
     width: 75%;
@@ -249,7 +260,7 @@ body {
 }
 
 .btn-green {
-    background-color: #678867ca;
+    background-color: #475d47ca;
     color: #fff;
 }
 
@@ -298,22 +309,22 @@ body {
 }
 
 .section-features .row .col-lg-10 {
-    background-color: #ffffff; /* White box */
+    background-color: #678867ca; /* White box */
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 1px solid #678867ca;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .section-features .row h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
-    color: #444;
+    color: rgb(0, 0, 0);
 }
 
 .section-features .row h4 {
     font-size: 0.9rem;
     font-weight: 400;
-    color: #666;
+    color: rgb(51, 50, 50);
 }
 
 /* TODO see portfolio item style of old style in assets */
@@ -391,7 +402,7 @@ body {
 
 /* White Box for Education and Experience */
 .education-box, .experience-box {
-    background-color: #ffffff;
+    background-color: #678867ca;
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -404,6 +415,20 @@ body {
     margin-top: 15px;
     margin-bottom: 10px;
     color: #444;
+}
+
+.portfolio-sorting h4 b,
+.education-box strong,
+.education-box h4 b {
+    color: #8cef8c; /* Green color */
+    font-weight: bold; /* Ensure bold styling */
+}
+
+
+.portfolio-sorting a b,
+.portfolio-sorting a strong {
+    color: inherit; /* Inherit the link's color */
+    font-weight: bold; /* Ensure it remains bold */
 }
 
 .education-box ul, .experience-box ul {
@@ -419,7 +444,7 @@ body {
 
 /* Skills Section */
 .section-skills .skill-box {
-    background-color: #ffffff;
+    background-color: #678867ca;
     padding: 20px;
     border: 1px solid #ddd;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -431,7 +456,13 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 15px;
-    color: #444;
+    color: rgb(68, 68, 68);
+}
+
+.section-skills .skill-box li {
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(187, 238, 169);
 }
 
 .section-skills ul {

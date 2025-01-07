@@ -17,6 +17,20 @@
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/circuit-board-texture-2-1184404.jpg">
 </head>
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visual Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
 <body>
     <!-- Top Header -->
     <header>
@@ -40,7 +54,7 @@
                             <a class="nav-link" href="CV.html">Complete Bio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="visual_portfolio.html">Visual Portfolio</a>
+                            <a class="nav-link active" href="visual_portfolio.html">Visual Portfolio</a>
                         </li>
                     </ul>
                 </div>
@@ -69,8 +83,29 @@
         </div>
     </header>
 
+    <!-- Main Content -->
+    <main id="main" class="site-main">
+        <section class="site-section section-features">
+            <div class="container text-center">
+                <h2 class="heading-separator">Visual Portfolio</h2>
+                <p class="lead" style="margin-top: 20px;">
+                    This page is currently under construction, but visual projects and artistic works will be added very soon. ,<br> Thank you for your patience!
+                </p>
+            </div>
+        </section>
 
+        <!-- PDF Viewer Section -->
+        <section class="site-section section-pdf-viewer">
+            <div class="container">
+                <h3 class="text-center mb-4">Preview Illustration Portfolio</h3>
+                <div class="pdf-container" style="border: 1px solid rgb(0, 0, 0); padding: 10px; background-color: #000000;">
+                    <iframe src="assets/portfolios/Illustration_portfolio.pdf" width="100%" height="600px" style="border: none;"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="footer-container">
             <!-- LinkedIn -->
@@ -78,33 +113,26 @@
                 <i class="fa fa-linkedin" aria-hidden="true"></i>
                 matilde.piccoli
             </a>
-    
+
             <!-- Email -->
             <a href="mailto:matilde.piccoli@gmail.com" class="contact-item">
                 <i class="fa fa-envelope" aria-hidden="true"></i>
                 matilde.piccoli@gmail.com
             </a>
-    
+
             <!-- Phone -->
             <a href="tel:+33745599040" class="contact-item">
                 <i class="fa fa-phone" aria-hidden="true"></i>
                 +33745599040
             </a>
-    
+
             <!-- Instagram -->
             <a href="https://www.instagram.com/matilde.piccoli" target="_blank" class="contact-item">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
                 @mainas.art
             </a>
-    
-            <!-- TODO Download CV
-            <a href="assets/attachments/Matilde_Piccoli_CV.pdf" download class="contact-item">
-                <i class="fa fa-download" aria-hidden="true"></i>
-                Download CV
-            </a> -->
         </div>
     </footer>
-    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
