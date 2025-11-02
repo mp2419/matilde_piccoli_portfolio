@@ -5,7 +5,7 @@
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    background-color: #f8f9fa;
+    background-color: #000000;
     color: #333;
 }
 
@@ -16,7 +16,7 @@ a {
 }
 
 a:hover {
-    color: #afe7af; /* Darker shade of yellow (orange) on hover */
+    color: #ccf0cc; /* Darker shade of yellow (orange) on hover */
 }
 
 
@@ -33,7 +33,7 @@ a:hover {
 }
 
 .hero-section .hero-box {
-    background-color: #cae4caca; /* White background */
+    background-color: #e2f0e2; /* White background */
     opacity: 0.95; /* Slight transparency */
     padding: 30px 20px; /* Inner spacing */
     border: none; /* Remove any unwanted borders */
@@ -76,7 +76,7 @@ a:hover {
 
 /* In a Nutshell Section */
 .nutshell-section {
-    background-color:  #678867ca; /* Green background */
+    background-color:  #e2f0e2;; /* Green background */
     padding: 50px 0;
     text-align: center;
 }
@@ -89,7 +89,7 @@ a:hover {
 }
 
 .nutshell-box {
-    background-color: #a9dba9ca;/* In a Nutshell Section */
+    background-color: #ccf0cc;;/* In a Nutshell Section */
     padding: 20px;
     border-radius: 0px;
     width: 75%;
@@ -116,7 +116,10 @@ a:hover {
 .offcanvas {
     background-color: #040404; /* Black background for side window */
     color: white;
+    position: fixed;
+    z-index: 1055; /* Bootstrap default */
 }
+
 
 .offcanvas .nav-link {
     color: white; /* White by default */
@@ -175,55 +178,6 @@ a:hover {
 .contact-links li a:hover {
     color: #678867ca; /* Green hover color */
 }
-
-/* Footer Styles */
-.site-footer {
-    background-color: #040404; /* Black background */
-    padding: 20px 0;
-    color: white;
-    text-align: center;
-}
-
-.site-footer .footer-container {
-    display: flex;
-    justify-content: space-evenly; /* Even spacing between items */
-    align-items: center;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-    gap: 20px; /* Add spacing between items */
-}
-
-/* Individual Contact Items */
-.site-footer .contact-item {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    gap: 10px; /* Space between icon and text */
-}
-
-.site-footer .contact-item i {
-    font-size: 20px;
-    color: white; /* Icon color */
-}
-
-.site-footer .contact-item:hover {
-    color: #678867ca /* Green hover effect */
-}
-
-/* Responsive Behavior */
-@media (max-width: 768px) {
-    .site-footer .footer-container {
-        flex-direction: column; /* Stack items vertically */
-        text-align: center;
-    }
-
-    .site-footer .contact-item {
-        justify-content: center; /* Center align for smaller screens */
-    }
-}
-
 
 /* butttttttttons */
 
@@ -284,7 +238,7 @@ button.btn:focus {
 body {
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    background-color: #678867ca; /* Background color */
+    background-color: #e2f0e2; /* Background color */
     color: #333;
 }
 
@@ -309,9 +263,8 @@ body {
 }
 
 .section-features .row .col-lg-10 {
-    background-color: #678867ca; /* White box */
+    background-color: #b8deb8ca; /* White box */
     padding: 20px;
-    border: 1px solid #678867ca;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -327,66 +280,6 @@ body {
     color: rgb(51, 50, 50);
 }
 
-/* TODO see portfolio item style of old style in assets */
-/* Portfolio Section */
-.section-portfolio .portfolio-item {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.section-portfolio .portfolio-item img {
-    width: 100%; /* Small responsive images */
-    height: auto;
-    transition: transform 0.3s ease;
-}
-
-.section-portfolio .portfolio-item:hover img {
-    transform: scale(1.05); /* Slight zoom on hover */
-}
-
-.section-portfolio .portfolio-item h4 {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    font-size: 1rem;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.7); /* Text background */
-    padding: 5px 10px;
-    border-radius: 0; /* No rounded corners */
-    transition: all 0.3s ease;
-}
-
-.section-portfolio .portfolio-item:hover h4 {
-    background-color: #6fc754; /* Green hover effect */
-    color: #ffffff;
-}
-
-.section-portfolio .portfolio-item a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    font-size: 1.5rem;
-    color: #ffffff;
-    background-color: #6fc754;
-    padding: 10px 15px;
-    border-radius: 50%;
-    transition: all 0.3s ease;
-    text-decoration: none;
-}
-
-.section-portfolio .portfolio-item:hover a {
-    opacity: 1;
-}
-
-
-.site-section {
-    margin: 20px 0;
-}
-
 /* Curriculum Vitae Title */
 .site-section:first-of-type h1 {
     font-size: 2.5rem;
@@ -395,10 +288,6 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
-
-
-/* Title */
-
 
 /* White Box for Education and Experience */
 .education-box, .experience-box {
@@ -420,7 +309,7 @@ body {
 .portfolio-sorting h4 b,
 .education-box strong,
 .education-box h4 b {
-    color: #8cef8c; /* Green color */
+    color: #293629; /* Green color */
     font-weight: bold; /* Ensure bold styling */
 }
 
@@ -476,3 +365,269 @@ body {
     color: #555;
     margin-bottom: 10px;
 }
+
+/* ------------GALLERY------------- */
+
+/* === Lightbox & Transition Enhancements === */
+.modal.fade .modal-dialog {
+    transform: scale(0.95);
+    opacity: 0;
+    filter: blur(6px);
+    transition: all 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+  }
+.modal.show .modal-dialog {
+transform: scale(1);
+opacity: 1;
+filter: blur(0);
+}
+
+.modal-backdrop.show {
+backdrop-filter: blur(10px) brightness(0.5);
+background-color: rgba(0, 0, 0, 0.8);
+transition: backdrop-filter 0.4s ease;
+}
+/* === Modal White Style === */
+.modal-content {
+    background: #fff;
+    color: #000;
+    border-radius: 6px;
+    max-width: 90vw;            /* 75% of viewport width */
+    margin: auto;               /* center horizontally */
+    max-height: 85vh;           /* leave some space top/bottom */
+    overflow-y: auto;           /* scrollable if content too tall */
+    box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    padding: 2rem;
+}
+
+.modal-body img,
+.modal-body video {
+border-radius: 8px;
+max-width: 100%;
+height: auto;
+margin-bottom: 1rem;
+}
+
+.modal-body img:hover,
+.modal-body video:hover {
+transform: scale(1.02);
+box-shadow: 0 0 50px rgba(150, 255, 200, 0.25);
+}
+  
+
+
+.navbar-dark .navbar-nav .nav-link:hover {
+color: #678867ca;
+}
+
+[data-scroll-container] {
+    overflow: hidden;
+    background-color: #e2f0e2;
+    min-height: 100vh;          /* ensure it fills the screen */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure the scroll container always accounts for content */
+.portfolio-section {
+    min-height: 100vh;
+    padding-bottom: 5rem; /* space before footer */
+    background-color: transparent !important; /* remove Bootstrap’s default light bg */
+
+}
+
+/* Target Bootstrap rows inside the portfolio section */
+.portfolio-section .row {
+margin-bottom: 2rem;
+}
+
+.portfolio-hover {
+    position: absolute;
+    inset: 0;             /* covers full image */
+    z-index: 5;           /* above overlay text */
+    background: transparent;
+    cursor: pointer;
+  }
+  
+/* Compact and centered category buttons */
+.btn-group {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;         /* Wrap only when needed */
+    gap: 0;                  /* Remove extra spacing */
+}
+
+.btn-group .btn {
+flex: 0 0 auto;
+white-space: nowrap;
+padding: 0.35rem 0.8rem; /* tighter padding */
+font-size: 0.95rem;
+margin: 0;               /* neutralize Bootstrap’s internal margin */
+border-radius: 0;        /* keeps edges touching cleanly */
+}
+.btn-group .btn:first-child { border-top-left-radius: 0.9rem; border-bottom-left-radius: 0.9rem; }
+.btn-group .btn:last-child  { border-top-right-radius: 0.9rem; border-bottom-right-radius: 0.9rem; }
+
+  
+/* Portfolio Layout */
+.portfolio-thumb {
+    position: relative;
+    aspect-ratio: 1 / 1;         /* square */
+    width: 30%;                 /* fill available space */
+    max-width: 50%;             /* allow full grid control */
+    overflow: hidden;
+    border-radius: 3px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-thumb img,
+.portfolio-thumb video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.portfolio-thumb .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.portfolio-thumb {
+    flex: 1 1 auto;
+  }
+  
+.portfolio-thumb:hover .overlay {
+    opacity: 1;
+}
+  
+.portfolio-grid {
+    --bs-gutter-x: 0.7vh; /* reduce left-right spacing */
+    --bs-gutter-y: 0.7vh;   /* increase top-bottom spacing */
+}
+  
+/* Filter Buttons */
+.btn-outline-success.active,
+.btn-outline-success:hover {
+background-color: #678867ca;
+color: #fff;
+border-color: #678867ca;
+}
+
+/* Smooth visibility toggle */
+.portfolio-item {
+transition: opacity 0.6s ease, transform 0.6s ease;
+opacity: 1;
+transform: scale(1);
+}
+
+.hidden-item {
+opacity: 0;
+transform: scale(0.9);
+pointer-events: none;
+position: absolute !important;
+}
+
+.visible-item {
+opacity: 1;
+transform: scale(1);
+position: relative;
+}
+
+/* Footer */
+.site-footer {
+background-color: #040404;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+}
+
+.site-footer .footer-container {
+display: flex;
+justify-content: space-evenly;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+.site-footer .contact-item {
+display: flex;
+align-items: center;
+gap: 8px;
+color: white;
+text-decoration: none;
+}
+
+.site-footer .contact-item:hover {
+color: #678867ca;
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .site-footer .footer-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center;
+    }
+
+    .site-footer .contact-item {
+        justify-content: center; /* Center align for smaller screens */
+    }
+}
+
+/* home---- */
+.carousel-bg-section {
+    position: relative;
+    height: 100vh; /* full viewport */
+    overflow: hidden;
+  }
+  
+  .carousel-bg-section img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.85; /* dim background */
+  }
+  
+  .overlay-content {
+    z-index: 2;
+  }
+  
+  .overlay-content .content-box {
+    color: white;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .small-profile {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  .education-box, .experience-box, .skill-box {
+    background-color: #d4ebd4ca;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  h2.heading-separator {
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
