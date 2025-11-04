@@ -1,48 +1,38 @@
-### Data Investigation / Digital Medias
-- **Digital Rights** → Personal Data.io  
-- **Critical Materials** → Transnational Institute  
-- **Energy Market** → Transnational Institute  
-- **Surveillance Capitalism** → Ben Hayes  
-- **Artificial Intelligence** → Université Paris-Saclay / CNRS  
-- **Seed Ownership** → Permaculture Network  
 
-**Skills:** Python, Excel, SQL, data visualization, dynamic scrollytelling, statistics, geopolitics, economics, rights  
-**Ups:** Easy to collaborate, PhD/work time flexibility  
-**Downs:** Deepen topic knowledge, diverse learning  
+### Data Investigation / Digital Medias: 
+Projects: Topic -> Contacts -> Focus Point
+- **Digital Rights / Surveillance Capitalism** → PDIO, Ben Hayes, Julien Rossi -> How do we relate to our data
+- **Critical Materials** → Transnational Institute -> Story of Everyday objects (Coltan and Lithium focus)
+- **Energy Market** → Paul Ekins, Daniel Chavez, Lucia Barcena -> Ten Truths about the transition & emancipation
+- **Artificial Intelligence** → Université Paris-Saclay / CNRS, CIS -> AI ownership and decentralisation
 
+**Skills:** Python, Interactve Data Visualization, Web Dev (html,css,js) + statistics, geopolitics, economics, rights, ai 
 
 ---
 
 ### Illustration
-- **Editorial Illustration Portfolio** → 12 illustrations  
-- **Children’s Books** → 2 storyboards → editors → full projects sample + albo  
-- **Prints** → (in progress)  
-- **Paintings** → (in progress)  
-- **Graphics** → (older works)  
+Projects: Stream -> Pojects and development stap
 
-**Skills:** Digital illustration coherence, analogue/digital style identification, printing techniques, Adobe, Procreate  
-**Ups:** Leverage school network and contacts, build from existing work  
-**Downs:** Find coherent style, focus on fewer targets, prepare for agency representation  
+- **Editorial Illustration Portfolio** → 1/8 illustrations articles + 6/8 affiches
+- **Children’s Books** → Caposela 8/10 + UomoSenzaSpecchio 2/10 + TiRicordero 2/10
+- **Prints** → stadby  
+- **Paintings** → standby  
+- **Graphics** → tangential  
 
-
----
-
-### Animation
-- **Short Animations** → (various)  
-- **Seeds** → Seeds with music  
-- **Long Animation 1** → *Dear Friends, In the End*  
-- **Long Animation 2** → *Ode to the Small Things*  
-
-**Skills:** Animation course, sound editing  
-
+**Skills:** Digital illustration coherence, analogue/digital style identification, printing techniques, Adobe, Procreate + thematic coherence
 
 ---
 
-### Multimedia Performances
-- **Mujeres Rocas**  
-- **Music Collab 1** → Visual/live drawing (France)  
-- **Music Collab 2** → Visuals/live drawing (Italy)  
-- **Theatre/Circus Collab** → Offer visual plus interactive component  
-- **Live Performance** → Write, physical preparation + visuals  
+### Multimedia
+- **Short Animations** → experimentation + portfolio samples: 5/10
+- **Long Animations** → Seeds with music 8/10 + music collab 0/10 
+- **Mulitmedia Performance** → Mujeres Rocas 10/10 + Visual/live drawing 0/10 + Meat&Metal 1/10
 
-**Skills:** Live drawing, physical preparation, piece writing, art project creation, modern circus acting  
+**Skills:** Animation Techniques, Live drawing, Piece writing, art project creation, interactive visual perfromance, music-visual codeveloment, collaboration
+
+Overall 2-Years Goals:
+- Portfolio
+- Style Choerence
+- Collaboration
+- Grant writing
+- Freelance Set-up
