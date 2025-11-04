@@ -1,7 +1,8 @@
-#TODO overlay description + gallery
-#TODO illustration carousels on grid icon
-#TODO projects + selection
-#TODO site footer portoflio not visible
-#TODO bio rewrite
-#TODO home page descritpion 
-#TODO portoflio + cv in pdf
+**TODOs**
+- overlay description + gallery
+- illustration carousels on grid icon
+- projects + selection
+- site footer portoflio not visible
+- bio rewrite
+- home page descritpion 
+- portoflio + cv in pdf
