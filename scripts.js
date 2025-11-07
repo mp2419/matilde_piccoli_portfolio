@@ -75,4 +75,21 @@ document.querySelectorAll('.modal').forEach((modal) => {
   });
 
 
+  document.addEventListener("DOMContentLoaded", () => {
+    const scrollEl = document.querySelector("[data-scroll-container]");
+    if (!scrollEl) return;
+  
+    const scroll = new LocomotiveScroll({
+      el: scrollEl,
+      smooth: true,
+      lerp: 0.1,
+      tablet: { smooth: true },
+      smartphone: { smooth: false },
+    });
+  
+    // ⚡️ Recalculate scroll height once images/videos are loaded
+    window.addEventListener("load", () => {
+      setTimeout(() => scroll.update(), 500);
+    });
+  });
   
