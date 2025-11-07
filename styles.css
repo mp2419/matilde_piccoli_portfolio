@@ -556,7 +556,8 @@ position: relative;
     background-color: #000;
     color: #fff;
     text-align: center;
-    padding-bottom: 5rem; /* breathing room */
+    padding-top: 1rem;
+    padding-bottom: 5rem; 
     z-index: 10;
 }
 

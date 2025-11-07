@@ -4,6 +4,7 @@
 - site footer portoflio not visible
 - portoflio + cv in pdf
 - cannot see hello in home with small screens
+- buggy selector
 
 --------------------
 
